@@ -1,0 +1,514 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=6190c64f-f142-499f-a9c2-fce613d605e1
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta name="hosting-provider" content="Netlify">
+<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=6190c64f-f142-499f-a9c2-fce613d605e1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">PORTFOLIO</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content container">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">SHARJEEL</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typed-text"></span>
+        <span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Full-stack developer crafting clean, performant web experiences.
+        I turn ideas into elegant digital products.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">PROJECTS</a>
+        <a href="#contact" class="btn btn-outline">CONTACT</a>
+      </div>
+      
+    <div class="scroll-indicator">
+      <a href="#about" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="image-placeholder">
+            <span>SH7</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p>
+            I'm a passionate full-stack developer with over 4 years of experience
+            building web applications that are fast, accessible, and delightful to use.
+            I love solving complex problems and turning them into simple, elegant solutions.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies, contributing
+            to open source, or hiking in the mountains. I believe great software comes
+            from curiosity, collaboration, and continuous learning.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="20">0</span>+
+              <span class="stat-label">PROJECTS</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="4">0</span>+
+              <span class="stat-label">YEARS EXP.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-target="30">0</span>+
+              <span class="stat-label">HAPPY CLIENTS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section-title">SKILLS</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React / Next.js</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js & Express</li>
+            <li>Python & Django</li>
+            <li>PostgreSQL & MongoDB</li>
+            <li>REST & GraphQL</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🚀</div>
+          <h3>Tools & Others</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Netlify</li>
+            <li>AWS & Vercel</li>
+            <li>Figma</li>
+            <li>CI/CD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>HTML5</span>
+            <span>92%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-width="92"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>CSS3</span>
+            <span>88%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-width="88"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>JavaScript / JavaScript (ES6+)</span>
+            <span>85%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info">
+            <span>React / Next.js</span>
+            <span>78%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" data-width="78"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section-title">PROJECTS</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="https://sharjeel-7.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/QUIZ-APP" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>QUIZ APP</h3>
+            <p>I made this Quiz-app using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <a href="https://class-hub-7.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/CLASSMATE-HUB" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>CLASSMATE HUB</h3>
+            <p>I made this ClassMate Hub using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt1">
+            <div class="project-overlay">
+              <a href="https://sas-motors.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/SHARJEEL-MOTORS" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>SHOWROOM</h3>
+            <p>I made this Showroom using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://mobile-7.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/MOBILE-APP" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>MOBILE APP</h3>
+            <p>I made this Mobile App using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://dj-clock-7.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/DJ-CLOCK" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>DJ CLOCK</h3>
+            <p>I made this DJ clock using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://todo-app-804.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/ToDo-APP" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>ToDo APP</h3>
+            <p>I made this ToDo App using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://weather-app-804.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/WEATHER-APP" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>WEATHER APP</h3>
+            <p>I made this Weather App using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://fitness-804.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/VIZOCHRONO-PRO" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>VZIOCNHRONO PRO</h3>
+            <p>I made this VzioCnhrono Pro using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://post-app-7.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/POST-APP" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>POST APP</h3>
+            <p>I made this Post app using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://sas-restaurant.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/SHARJEEL-RESTAUTANT" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>RESTAUTANT APP</h3>
+            <p>I made this Restaurant app using HTML and CSS.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://clock-804.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/DIGITAL-CLOCK" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>DIGITAL CLOCK</h3>
+            <p>I made this simple Clock using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://project2010.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/DARK-LIGHT-MODE" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>DARK LIGHT MODE</h3>
+            <p>I made this Dark Light Mode using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt2">
+            <div class="project-overlay">
+              <a href="https://calculator804.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/CALCULATOR" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>CALCULATOR</h3>
+            <p>I made this Calculator using HTML,CSS and JavaScript.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image alt3">
+            <div class="project-overlay">
+              <a href="https://foam-12.netlify.app/" class="btn btn-sm">Live Demo</a>
+              <a href="https://github.com/warraichmsharjeel7/REGISTRATION-FOAM" class="btn btn-sm btn-outline">Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>REGISTRATION FOAM</h3>
+            <p>I made this Registration foam page using HTML and CSS.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section-title">CONTACT</h2>
+      <p class="contact-intro">
+        Have a project in mind or just want to say hello? Feel free to reach out.
+        I'm always open to discussing new opportunities.
+      </p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="info-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"alt="Email"width="50">
+            </div>
+            <div>
+              <h4>EMAIL</h4>
+              <a href="https://mail.google.com/mail/u/0/#inbox">warraichmsharjeel18@example.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png"alt="Location"width="50">
+            </div>
+            <div>
+              <h4>LOCATION</h4>
+              <p>Karachi, Pakistan</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png"alt="Availability"width="50">
+            </div>
+            <div>
+              <h4>AVAILABILITY</h4>
+              <p>Open to freelance & full-time</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <!-- <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"width="50"> -->
+            <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"alt="GitHub"width="50">
+            </div>
+            <div>
+              <h4>GITHUB</h4>
+              <a href="https://github.com/warraichmsharjeel7">SHARJEEL7</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> SHARJEEL</p>
+      <div class="footer-links">
+        <a href="https://github.com/warraichmsharjeel7">GITHUB</a>
+        <a href="https://sharjeelwebsite.netlify.app/">WEBSITE</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="6190c64f-f142-499f-a9c2-fce613d605e1" data-app-host="app.netlify.com"></script>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="188c05da-f2e1-47b3-a60f-7d2788d35718" data-app-host="app.netlify.com"></script>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="614ffaaa-b26f-4d2e-bede-524134001fe6" data-app-host="app.netlify.com"></script>
