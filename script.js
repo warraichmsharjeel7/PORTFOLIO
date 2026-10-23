@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * MUHAMMAD AZHAN — PORTFOLIO
+ * SHARJEEL7 — PORTFOLIO
  * Master Production JavaScript (Vanilla JS - Zero External Dependencies)
  * ==========================================================================
  */
@@ -12,23 +12,22 @@
    ========================================================================== */
 const CONFIG = {
   // Brand Identity
-  fullName: 'Muhammad Azhan',
+  fullName: 'SHARJEEL7',
   professionalTitle: 'Web Developer | Full Stack Developer',
 
   // Social & Contact Integrations
-  githubUsername: 'Azhan787',
-  githubProfileUrl: 'https://github.com/Azhan787',
-  githubApiUrl: 'https://api.github.com/users/Azhan787/repos?sort=updated&direction=desc&per_page=100',
-  whatsappNumber: '923701366877',
-  whatsappFormatted: '+92 370-1366877',
-  whatsappPrefillText: 'Hello Muhammad, I visited your portfolio and would like to get in touch.',
-  linkedinUrl: 'https://www.linkedin.com/in/muhammad-azhan-54724537a',
+  githubUsername: 'SHARJEEL7',
+  githubProfileUrl: 'https://github.com/warraichmsharjeel7',
+  githubApiUrl: 'https://api.github.com/users/warraichmsharjeel7/repos?sort=updated&direction=desc&per_page=100',
+  whatsappNumber: '923465688209',
+  whatsappFormatted: '+92 346-5688209',
+  whatsappPrefillText: 'Hello SHARJEEL7, I visited your portfolio and would like to get in touch.',
   
   // Official Email Address
-  emailAddress: 'itxazhan32@gmail.com',
+  emailAddress: 'warraichmsharjeel18@gmail.com',
 
   // Assets
-  cvFilename: 'Muhammad_Azhan_CV.pdf',
+  cvFilename: 'Sharjeel_CV.pdf',
 
   // Projects View Configuration
   projectsPageSize: 6,
@@ -183,14 +182,14 @@ const GitHubProjects = {
   // Verified Curated Showcase Projects (with active Live Demos)
   curatedRepositories: [
     {
-      name: 'Muhammad-Azhan-Portfolio',
+      name: 'SHARJEEL7-PORTFOLIO',
       description: 'This portfolio website, built with HTML5, CSS3, and JavaScript',
       language: 'JavaScript',
       stargazers_count: 0,
       forks_count: 0,
       updated_at: new Date().toISOString(),
-      html_url: 'https://github.com/Azhan787/Muhammad-Azhan-Portfolio',
-      homepage: 'https://muhammadazhan.dpdns.org',
+      html_url: 'https://github.com/warraichmsharjeel7/SHARJEEL7-PORTFOLIO',
+      homepage: 'https://sharjeel1.netlify.app',
       topics: ['portfolio', 'html', 'css', 'javascript']
     }
   ],
@@ -690,7 +689,7 @@ const ContactSystem = {
       const email = emailInput.value.trim();
       const subject = subjectInput.value.trim();
       const message = messageInput.value.trim();
-      const targetEmail = CONFIG.emailAddress || 'itxazhan32@gmail.com';
+      const targetEmail = CONFIG.emailAddress || 'warraichmsharjeel18@gmail.com';
 
       // Update hidden inputs for native form serialisation
       const hiddenSubject = document.getElementById('hidden-email-subject');
@@ -797,15 +796,15 @@ const ContactSystem = {
           if (response.ok && (result.success === 'true' || result.success === true)) {
             form.reset();
             showFeedback(
-              'Message Sent Directly to itxazhan32@gmail.com!',
-              `Thank you, <strong>${name}</strong>. Your message has been sent directly to Muhammad Azhan's inbox.`,
+              'Message Sent Directly to warraichmsharjeel18@gmail.com!',
+              `Thank you, <strong>${name}</strong>. Your message has been sent directly to SHARJEEL7 inbox.`,
               false
             );
           } else if (result.message && result.message.toLowerCase().includes('activate')) {
             // First time activation link sent to inbox
             window.open(gmailUrl, '_blank');
             showFeedback(
-              'Confirmation Link Sent to itxazhan32@gmail.com',
+              'Confirmation Link Sent to warraichmsharjeel18@gmail.com',
               `FormSubmit sent an initial confirmation link to <strong>${targetEmail}</strong>. Meanwhile, Gmail Compose has been opened so your message is delivered right away!`
             );
             form.reset();
@@ -817,7 +816,7 @@ const ContactSystem = {
         console.warn('Direct delivery fallback initiated:', err);
         window.open(gmailUrl, '_blank');
         showFeedback(
-          'Direct Email Dispatch to itxazhan32@gmail.com',
+          'Direct Email Dispatch to warraichmsharjeel18@gmail.com',
           `Your message has been addressed directly to <strong>${targetEmail}</strong>. Gmail Compose has opened with your inquiry pre-filled.`
         );
         form.reset();
