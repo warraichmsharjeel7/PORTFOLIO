@@ -715,11 +715,11 @@ const ContactSystem = {
 
       // Prepare Direct Email parameters
       const emailSubject = `[Portfolio Inquiry] ${subject} — from ${name}`;
-      const emailBody = `Dear Muhammad Azhan,\n\nYou have received a new inquiry from your portfolio:\n\n• Name: ${name}\n• Email: ${email}\n• Subject: ${subject}\n\n• Message:\n${message}\n\n---\nSent directly to: ${targetEmail}`;
+      const emailBody = `Dear SHARJEEL7,\n\nYou have received a new inquiry from your portfolio:\n\n• Name: ${name}\n• Email: ${email}\n• Subject: ${subject}\n\n• Message:\n${message}\n\n---\nSent directly to: ${targetEmail}`;
       const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(targetEmail)}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
       const mailtoUrl = `mailto:${encodeURIComponent(targetEmail)}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-      const waText = `Hello Muhammad, I sent an inquiry from your portfolio:\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`;
-      const waUrl = `https://wa.me/${CONFIG.whatsappNumber || '923701366877'}?text=${encodeURIComponent(waText)}`;
+      const waText = `Hello SHARJEEL7, I sent an inquiry from your portfolio:\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`;
+      const waUrl = `https://wa.me/${CONFIG.whatsappNumber || '923465688209'}?text=${encodeURIComponent(waText)}`;
 
       const isFileMode = window.location.protocol === 'file:';
 
@@ -765,7 +765,7 @@ const ContactSystem = {
           // Local desktop preview (file:// protocol) -> Launch direct Gmail Compose
           window.open(gmailUrl, '_blank');
           showFeedback(
-            'Direct Email to itxazhan32@gmail.com Triggered!',
+            'Direct Email to warraichmsharjeel18@gmail.com Triggered!',
             `Your inquiry is pre-filled for <strong>${targetEmail}</strong>. Gmail Compose has been opened in a new tab so you can click send immediately.`
           );
           form.reset();
